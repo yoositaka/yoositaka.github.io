@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>original profile</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="csspro.css">
+
+        <script>
+            (function (d) {
+                var config = {
+                    kitId: 'pmi4wqy',
+                    scriptTimeout: 3000,
+                    async: true
+                },
+                        h = d.documentElement, t = setTimeout(function () {
+                            h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                        }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a;
+                h.className += " wf-loading";
+                tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+                tk.async = true;
+                tk.onload = tk.onreadystatechange = function () {
+                    a = this.readyState;
+                    if (f || a && a != "complete" && a != "loaded")
+                        return;
+                    f = true;
+                    clearTimeout(t);
+                    try {
+                        Typekit.load(config)
+                    } catch (e) {
+                    }
+                };
+                s.parentNode.insertBefore(tk, s)
+            })(document);
+        </script>
+
+    </head>
+    
+    <body>
+        <div class="wrapper">
+            <!-- ヘッダー -->
+            <header class="header">
+
+                <nav class="nav">
+                    <ul>
+                        <li><a href="profile.html">ホーム</a></li>
+                        <li><a href="dog.html">愛犬</a></li>
+                        <li><a href="arubamu.html">アルバム</a></li>
+                        <li><a href="contact1.html">お問い合わせ</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <!-- ヘッダー　ここまで -->
+            <!-- メイン -->
+            <div class="keyvisual">
+                <img src="image/keyvisual.jpg" alt="alt" width="1200" height=500">
+            </div>
+            <main>
+
+                <h1>プロフィール</h1>
+                <p>【生年月日】　１９９０年７月９日</p>
+                <p>【年齢】　３２歳</p>
+                <p>【出身】　兵庫県</p>
+                <p>【最終学歴】　日本工学院専門学校　放送・映画科　卒業</p>
+                <p>【趣味】　ファッション、インテリア集め、ゲーム、リアル脱出ゲーム、ボードゲーム、散歩</p>
+                <p>【資格】　ITパスポート</p>
+            </main>
+            <!-- メイン　ここまで -->
+        </div>
+    </body>
+</html>
